@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Web | Creación de Sitios Web y Tiendas Online Rápidas en Chile</title>
+    <meta name="description" content="Creamos tu Landing Page, sitio web o tienda online profesional en solo 1 día hábil. El servicio más rápido de Chile con integración a WhatsApp.">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        smartblue: {
+                            light: '#3B82F6',
+                            DEFAULT: '#1E40AF',
+                            dark: '#0F172A',
+                        },
+                        accent: {
+                            gold: '#F59E0B',
+                            orange: '#EA580C',
+                        }
+                    },
+                    boxShadow: {
+                        'premium': '0 20px 40px -15px rgba(30, 64, 175, 0.15)',
+                        'card-hover': '0 25px 50px -12px rgba(30, 64, 175, 0.25)',
+                    },
+                    backgroundImage: {
+                        'hero-pattern': "url('https://www.transparenttextures.com/patterns/cubes.png')",
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .hover-scale { transition: all 0.3s ease-in-out; }
+        .hover-scale:hover { transform: translateY(-5px); }
+        
+        .gradient-text {
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            background-image: linear-gradient(to right, #1E40AF, #3B82F6);
+        }
+        
+        /* Ocultar scrollbar horizontal por animaciones que entran desde los lados */
+        body { overflow-x: hidden; }
+    </style>
+</head>
+<body class="bg-slate-50 text-gray-800 font-sans antialiased selection:bg-smartblue selection:text-white">
+
+    <header class="fixed w-full bg-white/90 backdrop-blur-md shadow-sm z-50 transition-all duration-300 border-b border-gray-100" data-aos="fade-down" data-aos-duration="800">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <a href="#" class="flex items-center space-x-2 group">
+                <span class="font-heading font-extrabold text-2xl text-smartblue-dark group-hover:text-smartblue transition">Smart<span class="text-smartblue group-hover:text-smartblue-dark transition">Web</span>.</span>
+            </a>
+            
+            <nav class="hidden md:flex items-center space-x-8 font-medium text-sm uppercase tracking-wide text-gray-600">
+                <a href="#servicios" class="hover:text-smartblue transition relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-smartblue after:transition-all after:duration-300">Servicios</a>
+                <a href="#landing-info" class="hover:text-smartblue transition relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-smartblue after:transition-all after:duration-300">¿Qué es una Landing?</a>
+                <a href="#precios" class="hover:text-smartblue transition relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-smartblue after:transition-all after:duration-300">Precios</a>
+            </nav>
+
+            <a href="https://wa.me/56972670976" target="_blank" class="hidden md:inline-flex items-center px-6 py-2.5 bg-green-500 text-white font-bold rounded-full hover:bg-green-600 transition shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
+                <i class="fab fa-whatsapp mr-2 text-xl"></i> WhatsApp
+            </a>
+            
+            <button class="md:hidden text-gray-600 text-2xl focus:outline-none">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="relative pt-36 pb-20 lg:pt-44 lg:pb-32 overflow-hidden bg-white">
+            <div class="absolute inset-0 bg-hero-pattern opacity-5 z-0"></div>
+            <div class="absolute top-0 right-0 -translate-y-1/4 translate-x-1/4 blur-[120px] opacity-30 w-[500px] h-[500px] bg-smartblue rounded-full z-0 pointer-events-none"></div>
+            
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center lg:text-left lg:flex items-center justify-between">
+                <div class="lg:w-1/2 lg:pr-12 mb-16 lg:mb-0">
+                    <span data-aos="fade-down" data-aos-delay="100" class="inline-flex items-center py-1.5 px-4 rounded-full bg-blue-50 text-smartblue text-sm font-bold mb-6 uppercase tracking-wider shadow-sm border border-blue-100">
+                        <i class="fas fa-bolt mr-2 text-accent-gold"></i> El servicio más rápido de Chile
+                    </span>
+                    <h1 data-aos="fade-up" data-aos-delay="200" class="font-heading text-4xl md:text-5xl lg:text-6xl font-extrabold text-smartblue-dark leading-tight mb-6">
+                        Tu Negocio Online, Profesional y Listo en <span class="gradient-text">24 Horas</span>.
+                    </h1>
+                    <p data-aos="fade-up" data-aos-delay="300" class="text-lg md:text-xl text-gray-600 mb-8 leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                        Creamos tu Landing Page, sitio web o tienda online profesional, rápida, con la información precisa y lista para vender. Diseño premium con integración directa a WhatsApp.
+                    </p>
+                    <div data-aos="fade-up" data-aos-delay="400" class="flex flex-col sm:flex-row justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
+                        <a href="https://wa.me/56972670976?text=Hola Smart Web, quiero lanzar mi sitio web rápido." target="_blank" class="inline-flex items-center justify-center px-8 py-4 bg-smartblue text-white font-bold text-lg rounded-xl hover:bg-smartblue-dark transition shadow-lg hover:shadow-smartblue/50 hover:-translate-y-1">
+                            <i class="fab fa-whatsapp mr-3 text-2xl"></i> Hablar por WhatsApp
+                        </a>
+                        <a href="#precios" class="inline-flex items-center justify-center px-8 py-4 bg-white text-smartblue-dark font-bold text-lg border-2 border-gray-200 rounded-xl hover:border-smartblue hover:text-smartblue transition hover:-translate-y-1">
+                            Ver Planes y Precios
+                        </a>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 relative perspective-1000" data-aos="zoom-in-left" data-aos-duration="1200">
+                     <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[110%] h-[110%] bg-gradient-to-tr from-blue-100 to-slate-200 rounded-[30%_70%_70%_30%/30%_30%_70%_70%] blur-md -z-10"></div>
+                     <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Profesional trabajando" class="rounded-3xl shadow-2xl hover-scale mx-auto z-10 relative object-cover h-[500px] w-full max-w-xl border-4 border-white">
+                </div>
+            </div>
+        </section>
+
+
+        <div class="bg-smartblue-dark py-10 relative overflow-hidden">
+             <div class="absolute inset-0 bg-hero-pattern opacity-5"></div>
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-white text-center md:text-left items-center divide-y md:divide-y-0 md:divide-x divide-blue-800/50">
+                    <div class="flex flex-col items-center md:flex-row md:justify-center p-4" data-aos="fade-up" data-aos-delay="0">
+                        <div class="mb-4 md:mb-0 md:mr-5 p-4 bg-white/10 rounded-2xl shadow-inner">
+                            <i class="fas fa-rocket text-3xl text-blue-300"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-heading font-bold text-xl mb-1">Listo en 1 Día Hábil</h4>
+                            <p class="text-blue-200 text-sm opacity-90">Lanza tu proyecto sin esperas.</p>
+                        </div>
+                    </div>
+                     <div class="flex flex-col items-center md:flex-row md:justify-center p-4" data-aos="fade-up" data-aos-delay="150">
+                        <div class="mb-4 md:mb-0 md:mr-5 p-4 bg-white/10 rounded-2xl shadow-inner">
+                            <i class="fab fa-whatsapp text-3xl text-green-400"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-heading font-bold text-xl mb-1">Integración WhatsApp</h4>
+                            <p class="text-blue-200 text-sm opacity-90">Recibe clientes directo en tu celular.</p>
+                        </div>
+                    </div>
+                     <div class="flex flex-col items-center md:flex-row md:justify-center p-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="mb-4 md:mb-0 md:mr-5 p-4 bg-white/10 rounded-2xl shadow-inner">
+                            <i class="fas fa-gem text-3xl text-blue-300"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-heading font-bold text-xl mb-1">Calidad Premium</h4>
+                            <p class="text-blue-200 text-sm opacity-90">Diseño profesional y personalizado.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section id="landing-info" class="py-24 bg-white overflow-hidden">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 md:flex items-center gap-12">
+                <div class="md:w-1/2 mb-12 md:mb-0 relative" data-aos="fade-right" data-aos-duration="1000">
+                     <div class="absolute top-4 left-4 w-full h-full bg-smartblue/10 rounded-3xl -z-10"></div>
+                     <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2015&q=80" alt="Análisis de datos" class="rounded-3xl shadow-premium mx-auto object-cover h-[450px] w-full border border-gray-100">
+                </div>
+                <div class="md:w-1/2" data-aos="fade-left" data-aos-duration="1000">
+                    <span class="text-smartblue font-bold uppercase tracking-wider text-sm mb-2 block">Educación</span>
+                    <h2 class="font-heading text-3xl lg:text-4xl font-bold text-smartblue-dark mb-6 leading-tight">
+                        ¿Qué es una Landing Page y por qué la necesitas?
+                    </h2>
+                    <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                        Una Landing Page (página de aterrizaje) es una página web diseñada con un único objetivo: **convertir visitantes en clientes**. A diferencia de un sitio web completo, elimina distracciones y enfoca toda la atención en una sola acción.
+                    </p>
+                    <ul class="space-y-5">
+                        <li class="flex items-start" data-aos="fade-up" data-aos-delay="100">
+                            <div class="flex-shrink-0 mt-1">
+                                <i class="fas fa-check-circle text-green-500 text-xl bg-green-100 rounded-full p-1"></i>
+                            </div>
+                            <span class="text-gray-700 font-medium ml-4">Maximiza tus ventas enfocando al usuario en una sola oferta irresistible.</span>
+                        </li>
+                        <li class="flex items-start" data-aos="fade-up" data-aos-delay="200">
+                            <div class="flex-shrink-0 mt-1">
+                                <i class="fas fa-check-circle text-green-500 text-xl bg-green-100 rounded-full p-1"></i>
+                            </div>
+                            <span class="text-gray-700 font-medium ml-4">Ideal para campañas de publicidad (Google Ads, Facebook Ads).</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="servicios" class="py-24 bg-slate-50 relative">
+             <div class="absolute inset-0 bg-hero-pattern opacity-[0.03] z-0"></div>
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center mb-16 relative z-10" data-aos="fade-up">
+                 <span class="text-smartblue font-bold uppercase tracking-wider text-sm mb-2 block">Lo que hacemos</span>
+                 <h2 class="font-heading text-3xl lg:text-4xl font-bold text-smartblue-dark mb-4">Nuestros Servicios Premium</h2>
+                 <p class="text-lg text-gray-600 max-w-2xl mx-auto">Soluciones digitales completas, optimizadas para la velocidad y la conversión.</p>
+            </div>
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 relative z-10">
+                <div class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-card-hover transition-all duration-300 group text-center lg:text-left border border-gray-100 hover:border-blue-200 hover:-translate-y-2" data-aos="fade-up" data-aos-delay="0">
+                    <div class="w-16 h-16 bg-gradient-to-br from-blue-100 to-blue-50 text-smartblue rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition mx-auto lg:mx-0 shadow-sm">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-xl text-smartblue-dark mb-3 group-hover:text-smartblue transition">Landing Pages</h3>
+                    <p class="text-gray-600 leading-relaxed">Páginas de alto impacto diseñadas específicamente para captar clientes.</p>
+                </div>
+                 <div class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-card-hover transition-all duration-300 group text-center lg:text-left border border-gray-100 hover:border-blue-200 hover:-translate-y-2" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-16 h-16 bg-gradient-to-br from-blue-100 to-blue-50 text-smartblue rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition mx-auto lg:mx-0 shadow-sm">
+                        <i class="fas fa-sitemap"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-xl text-smartblue-dark mb-3 group-hover:text-smartblue transition">Sitios Web Corporativos</h3>
+                    <p class="text-gray-600 leading-relaxed">Sitios web multipágina para presentar tu empresa de forma profesional.</p>
+                </div>
+                 <div class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-card-hover transition-all duration-300 group text-center lg:text-left border border-gray-100 hover:border-blue-200 hover:-translate-y-2" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-16 h-16 bg-gradient-to-br from-blue-100 to-blue-50 text-smartblue rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition mx-auto lg:mx-0 shadow-sm">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-xl text-smartblue-dark mb-3 group-hover:text-smartblue transition">Tiendas Online</h3>
+                    <p class="text-gray-600 leading-relaxed">Vende tus productos 24/7 con catálogos y carrito de compras.</p>
+                </div>
+                 <div class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-card-hover transition-all duration-300 group text-center lg:text-left border border-gray-100 hover:border-blue-200 hover:-translate-y-2" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-16 h-16 bg-gradient-to-br from-blue-100 to-blue-50 text-smartblue rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition mx-auto lg:mx-0 shadow-sm">
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-xl text-smartblue-dark mb-3 group-hover:text-smartblue transition">Pagos Online</h3>
+                    <p class="text-gray-600 leading-relaxed">Conectamos pasarelas de pago seguras (Webpay, MercadoPago).</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-24 bg-white">
+             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                 <div class="text-center mb-16" data-aos="fade-up">
+                     <span class="text-smartblue font-bold uppercase tracking-wider text-sm mb-2 block">Nuestra Diferencia</span>
+                     <h2 class="font-heading text-3xl lg:text-4xl font-bold text-smartblue-dark mb-4">¿Por qué elegir Smart Web?</h2>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-12">
+                        <div class="flex items-start" data-aos="fade-up" data-aos-delay="0">
+                             <div class="flex-shrink-0"><div class="flex items-center justify-center h-14 w-14 rounded-2xl bg-smartblue text-white text-2xl shadow-lg shadow-smartblue/30"><i class="fas fa-stopwatch"></i></div></div>
+                             <div class="ml-6"><h4 class="text-xl leading-6 font-bold text-smartblue-dark font-heading mb-2">Entrega en 1 día hábil</h4><p class="text-base text-gray-600">Tu web estará lista en tiempo récord.</p></div>
+                         </div>
+                         <div class="flex items-start" data-aos="fade-up" data-aos-delay="100">
+                             <div class="flex-shrink-0"><div class="flex items-center justify-center h-14 w-14 rounded-2xl bg-smartblue text-white text-2xl shadow-lg shadow-smartblue/30"><i class="fas fa-paint-brush"></i></div></div>
+                             <div class="ml-6"><h4 class="text-xl leading-6 font-bold text-smartblue-dark font-heading mb-2">Diseño Profesional</h4><p class="text-base text-gray-600">Estética moderna y limpia.</p></div>
+                         </div>
+                         <div class="flex items-start" data-aos="fade-up" data-aos-delay="200">
+                             <div class="flex-shrink-0"><div class="flex items-center justify-center h-14 w-14 rounded-2xl bg-smartblue text-white text-2xl shadow-lg shadow-smartblue/30"><i class="fas fa-tachometer-alt"></i></div></div>
+                             <div class="ml-6"><h4 class="text-xl leading-6 font-bold text-smartblue-dark font-heading mb-2">Velocidad Extrema</h4><p class="text-base text-gray-600">Carga al instante en móviles.</p></div>
+                         </div>
+                         <div class="flex items-start" data-aos="fade-up" data-aos-delay="300">
+                             <div class="flex-shrink-0"><div class="flex items-center justify-center h-14 w-14 rounded-2xl bg-smartblue text-white text-2xl shadow-lg shadow-smartblue/30"><i class="fas fa-hand-holding-usd"></i></div></div>
+                             <div class="ml-6"><h4 class="text-xl leading-6 font-bold text-smartblue-dark font-heading mb-2">Sin Pagos Mensuales</h4><p class="text-base text-gray-600">Precios únicos por el desarrollo.</p></div>
+                         </div>
+                    </div>
+                    <div class="relative h-full min-h-[400px]" data-aos="fade-left" data-aos-duration="1200">
+                         <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Equipo profesional" class="rounded-3xl shadow-2xl object-cover h-full w-full absolute inset-0 border-4 border-white">
+                    </div>
+                </div>
+             </div>
+        </section>
+
+        <section id="precios" class="py-24 bg-slate-50 relative overflow-hidden">
+             <div class="absolute top-0 left-0 w-full h-[600px] bg-gradient-to-b from-blue-100 via-slate-50 to-slate-50 opacity-70 z-0"></div>
+             
+             <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="text-center mb-16" data-aos="fade-up">
+                    <span class="text-smartblue font-bold uppercase tracking-wider text-sm mb-2 block">Inversión Inteligente</span>
+                    <h2 class="font-heading text-3xl lg:text-4xl font-bold text-smartblue-dark mb-4">Planes Diseñados Estratégicamente</h2>
+                    <p class="text-lg text-gray-600 max-w-2xl mx-auto">Pago único, sin mensualidades ocultas.</p>
+               </div>
+               
+               <div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10 items-start max-w-6xl mx-auto">
+                   
+                    <div class="bg-white rounded-3xl shadow-xl border border-gray-200 p-8 hover:border-blue-300 transition-all duration-300 relative hover-scale group" data-aos="fade-right" data-aos-delay="200">
+                       <div class="absolute top-0 left-0 w-full h-2 bg-gray-200 rounded-t-3xl group-hover:bg-blue-300 transition-all"></div>
+                       <h3 class="font-heading text-2xl font-bold text-gray-800 mb-2">Plan Básico</h3>
+                       <p class="text-gray-500 text-sm mb-6">Para presencia online profesional rápida.</p>
+                       <div class="flex items-baseline mb-8">
+                           <span class="text-4xl lg:text-5xl font-extrabold text-smartblue-dark">$99.990</span>
+                           <span class="text-gray-500 font-medium ml-2 text-sm">Pago único</span>
+                       </div>
+                       
+                       <ul class="space-y-4 mb-8 text-sm text-gray-600">
+                           <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i> Sitio web profesional</li>
+                           <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i> Diseño responsive</li>
+                           <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i> Hasta 5 páginas</li>
+                           <li class="flex items-center font-bold text-smartblue bg-blue-50 p-2 rounded-lg"><i class="fas fa-bolt mr-3 text-accent-gold"></i> Entrega en 24 horas</li>
+                       </ul>
+                       
+                       <a href="https://wa.me/56972670976?text=Hola, quiero el plan Básico de $99.990" target="_blank" class="block w-full py-3.5 px-6 text-center rounded-xl bg-gray-50 text-smartblue-dark font-bold border border-gray-200 hover:bg-gray-100 transition shadow-sm">
+                           <i class="fab fa-whatsapp mr-2 text-green-500"></i> Contratar Plan Básico
+                       </a>
+                   </div>
+
+                   <div class="bg-white rounded-3xl shadow-2xl border-2 border-smartblue p-8 relative md:-mt-10 md:mb-10 transform transition-all duration-300 z-20" data-aos="zoom-in" data-aos-duration="1000">
+                       <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-accent-gold to-yellow-500 text-white text-sm font-bold uppercase py-2 px-8 rounded-full shadow-lg flex items-center">
+                           <i class="fas fa-star mr-2"></i> Más Vendido
+                       </div>
+                       <div class="absolute top-0 left-0 w-full h-3 bg-smartblue rounded-t-[calc(1.5rem-2px)]"></div>
+
+                       <h3 class="font-heading text-3xl font-extrabold text-smartblue-dark mb-2 relative mt-4">Plan Intermedio</h3>
+                       <p class="text-smartblue text-sm mb-6 font-medium">La opción perfecta para vender online.</p>
+                       <div class="flex items-baseline mb-8 relative">
+                           <span class="text-5xl lg:text-6xl font-extrabold text-smartblue">$199.990</span>
+                           <span class="text-gray-500 font-medium ml-2 text-sm">Pago único</span>
+                       </div>
+                       
+                       <ul class="space-y-4 mb-10 text-sm relative font-medium text-gray-700">
+                           <li class="flex items-center bg-blue-50 p-2 rounded-lg text-smartblue"><i class="fas fa-check-double mr-3"></i> <strong>Todo lo del plan Básico</strong></li>
+                           <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i> Hasta 10 páginas</li>
+                           <li class="flex items-center"><i class="fas fa-store text-smartblue mr-3"></i> <strong>Tienda online básica</strong></li>
+                           <li class="flex items-center"><i class="fas fa-envelope text-green-500 mr-3"></i> 5 cuentas de email 📧</li>
+                           <li class="flex items-center"><i class="fas fa-search text-green-500 mr-3"></i> SEO básico</li>
+                       </ul>
+                       
+                       <a href="https://wa.me/56972670976?text=Hola, quiero el plan Intermedio de $199.990 (Más Vendido)" target="_blank" class="block w-full py-4 px-6 text-center rounded-xl bg-smartblue text-white font-bold text-lg shadow-xl hover:bg-smartblue-dark transition hover:-translate-y-1">
+                        <i class="fab fa-whatsapp mr-2"></i> Contratar Plan Intermedio
+                       </a>
+                   </div>
+
+                   <div class="bg-white rounded-3xl shadow-xl border border-gray-200 p-8 hover:border-accent-orange transition-all duration-300 relative hover-scale group" data-aos="fade-left" data-aos-delay="200">
+                       <div class="absolute top-0 left-0 w-full h-2 bg-gray-200 rounded-t-3xl group-hover:bg-accent-orange transition-all"></div>
+                       <h3 class="font-heading text-2xl font-bold text-gray-800 mb-2">Plan Pro</h3>
+                       <p class="text-gray-500 text-sm mb-6">Para máximo rendimiento y ventas.</p>
+                       <div class="flex items-baseline mb-8">
+                           <span class="text-4xl lg:text-5xl font-extrabold text-smartblue-dark">$299.990</span>
+                           <span class="text-gray-500 font-medium ml-2 text-sm">Pago único</span>
+                       </div>
+                       
+                       <ul class="space-y-4 mb-8 text-sm text-gray-600">
+                           <li class="flex items-center bg-orange-50 p-2 rounded-lg text-accent-orange"><i class="fas fa-check-double mr-3"></i> <strong>Todo lo del plan Intermedio</strong></li>
+                           <li class="flex items-center"><i class="fas fa-store-alt text-accent-orange mr-3"></i> <strong>Tienda online completa</strong></li>
+                           <li class="flex items-center"><i class="fas fa-credit-card text-green-500 mr-3"></i> Pasarela de pagos integrada 💳</li>
+                           <li class="flex items-center"><i class="fas fa-headset text-accent-orange mr-3"></i> Soporte prioritario</li>
+                       </ul>
+                       
+                       <a href="https://wa.me/56972670976?text=Hola, quiero el plan Pro de $299.990" target="_blank" class="block w-full py-3.5 px-6 text-center rounded-xl bg-gradient-to-r from-accent-orange to-red-500 text-white font-bold hover:from-orange-600 hover:to-red-600 transition shadow-md hover:-translate-y-1">
+                        <i class="fab fa-whatsapp mr-2"></i> Contratar Plan Pro
+                       </a>
+                   </div>
+
+               </div>
+             </div>
+        </section>
+
+        <section class="py-24 bg-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center mb-16" data-aos="fade-up">
+                 <span class="text-smartblue font-bold uppercase tracking-wider text-sm mb-2 block">Testimonios</span>
+                 <h2 class="font-heading text-3xl lg:text-4xl font-bold text-smartblue-dark mb-4">Lo que dicen nuestros clientes</h2>
+            </div>
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-slate-50 p-8 rounded-3xl shadow-sm border border-gray-100 relative hover:shadow-md transition" data-aos="fade-up" data-aos-delay="0">
+                    <i class="fas fa-quote-left text-5xl text-blue-100 absolute top-6 left-6 -z-0"></i>
+                    <p class="text-gray-700 italic mb-8 relative z-10 mt-4 leading-relaxed">"Increíble la velocidad. Literalmente en un día tenía mi landing page lista y recibiendo los primeros contactos."</p>
+                    <div class="flex items-center">
+                        <div class="w-14 h-14 bg-gray-300 rounded-full mr-4 overflow-hidden shadow-sm border-2 border-white">
+                            <img src="https://i.pravatar.cc/150?img=11" alt="Cliente 1" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h5 class="font-bold text-smartblue-dark font-heading">Carlos M.</h5>
+                            <p class="text-sm text-gray-500">Emprendedor Inmobiliario</p>
+                        </div>
+                    </div>
+                </div>
+                 <div class="bg-slate-50 p-8 rounded-3xl shadow-sm border border-gray-100 relative hover:shadow-md transition" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fas fa-quote-left text-5xl text-blue-100 absolute top-6 left-6 -z-0"></i>
+                    <p class="text-gray-700 italic mb-8 relative z-10 mt-4 leading-relaxed">"El diseño es precioso y la integración con WhatsApp es clave para cerrar ventas. Muy recomendados."</p>
+                    <div class="flex items-center">
+                        <div class="w-14 h-14 bg-gray-300 rounded-full mr-4 overflow-hidden shadow-sm border-2 border-white">
+                            <img src="https://i.pravatar.cc/150?img=5" alt="Cliente 2" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h5 class="font-bold text-smartblue-dark font-heading">Ana P.</h5>
+                            <p class="text-sm text-gray-500">Dueña de Boutique Online</p>
+                        </div>
+                    </div>
+                </div>
+                 <div class="bg-slate-50 p-8 rounded-3xl shadow-sm border border-gray-100 relative hover:shadow-md transition" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fas fa-quote-left text-5xl text-blue-100 absolute top-6 left-6 -z-0"></i>
+                    <p class="text-gray-700 italic mb-8 relative z-10 mt-4 leading-relaxed">"Necesitaba una web corporativa urgente y cumplieron con el plazo de 24 horas sin sacrificar calidad."</p>
+                    <div class="flex items-center">
+                        <div class="w-14 h-14 bg-gray-300 rounded-full mr-4 overflow-hidden shadow-sm border-2 border-white">
+                            <img src="https://i.pravatar.cc/150?img=33" alt="Cliente 3" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h5 class="font-bold text-smartblue-dark font-heading">Roberto D.</h5>
+                            <p class="text-sm text-gray-500">Gerente Comercial</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="bg-smartblue-dark text-white pt-20 pb-10">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
+                    <div class="md:pr-10">
+                        <a href="#" class="flex items-center space-x-2 mb-6 group">
+                            <span class="font-heading font-extrabold text-3xl text-white">Smart<span class="text-blue-400 group-hover:text-blue-300 transition">Web</span>.</span>
+                        </a>
+                        <p class="text-blue-200 mb-8 leading-relaxed opacity-80">
+                            Creamos soluciones digitales rápidas, efectivas y profesionales.
+                        </p>
+                    </div>
+                    <div>
+                        <h4 class="font-heading font-bold text-xl mb-8 text-white">Navegación</h4>
+                        <ul class="space-y-4">
+                            <li><a href="#servicios" class="text-blue-200 hover:text-white transition flex items-center"><i class="fas fa-chevron-right text-xs mr-3 text-blue-400"></i> Servicios</a></li>
+                            <li><a href="#landing-info" class="text-blue-200 hover:text-white transition flex items-center"><i class="fas fa-chevron-right text-xs mr-3 text-blue-400"></i> ¿Qué es una Landing?</a></li>
+                            <li><a href="#precios" class="text-blue-200 hover:text-white transition flex items-center"><i class="fas fa-chevron-right text-xs mr-3 text-blue-400"></i> Planes y Precios</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                         <h4 class="font-heading font-bold text-xl mb-8 text-white">Contacto Inmediato</h4>
+                         <a href="https://wa.me/56972670976" target="_blank" class="flex items-center p-4 bg-white/10 rounded-2xl text-xl font-bold text-green-400 hover:bg-white/20 transition hover:text-green-300 group">
+                             <i class="fab fa-whatsapp mr-4 text-3xl group-hover:scale-110 transition"></i> 
+                             <span>+569 7267 0976</span>
+                         </a>
+                    </div>
+                </div>
+                
+                <div class="border-t border-blue-900/50 pt-8 text-center md:flex md:justify-between items-center">
+                    <p class="text-blue-300 text-sm mb-6 md:mb-0 opacity-70">© 2025 Smart Web Chile. Todos los derechos reservados. Creado por Ricky</p>
+                    <div class="flex space-x-8 justify-center">
+                        <a href="#" class="text-blue-300 hover:text-white transition text-2xl hover:-translate-y-1"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-blue-300 hover:text-white transition text-2xl hover:-translate-y-1"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+    <a href="https://wa.me/56972670976?text=Hola Smart Web, necesito información." target="_blank" class="fixed bottom-6 right-6 bg-green-500 w-16 h-16 rounded-full flex items-center justify-center text-white text-4xl shadow-lg hover:bg-green-600 transition z-50 animate-bounce md:hidden hover:shadow-xl">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true, // La animación solo sucede una vez al bajar
+            offset: 100, // Comienza la animación un poco antes de llegar al elemento
+            duration: 800,
+            easing: 'ease-out-cubic',
+        });
+    </script>
+
+</body>
+</html>
